@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>habby habby birthday seeena 🥳🌷</title>
+    <link href="styles.css" " rel=" stylesheet">
+    </link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon"
+        href="https://64.media.tumblr.com/e060a673f719c128fe8657b6f55423cd/tumblr_inline_mu6uhkasB81qid2nw.gif">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <script>
+        function r() {
+            document.getElementById("ring").src = "assets/ring2.jpeg";
+            document.getElementById("ring").onclick = "";
+            let img1 = document.createElement('img');
+            let img2 = document.createElement('img');
+            img1.src =
+                'assets/kiki_msg.jpeg';
+            img2.src =
+                'assets/isabel_msg.jpg';
+            document.getElementById('cards').appendChild(img1);
+            document.getElementById('cards').appendChild(img2);
+
+            // document.getElementById("cards").append(<div><img src="assets/kiki_msg.jpeg" /><img src="assets/kiki_msg" /></div>)
+        }
+    </script>
+
+    <div class="main-container" id="main-container">
+        <div id="cards"></div>
+        <img id="ring" src="assets/ring1.jpeg" onclick="r()" />
+    </div>
+
+
+</body>
+
+</html>

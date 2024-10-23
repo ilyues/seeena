@@ -1,0 +1,35 @@
+#ring {
+  position: relative;
+  width: 500px;
+  max-width: 80vw;
+}
+
+.main-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  height: fit-content;
+  gap: 20px;
+  padding: 100px;
+}
+
+#cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  img {
+    width: 750px;
+    max-width: 80vw;
+  }
+}
+
+@media only screen and (max-device-width: 1024px) /* mobile */ {
+  #cards {
+    flex-direction: column;
+  }
+}
